@@ -23,7 +23,7 @@ async function harness() {
             state.sent.push(prompt);
         },
     };
-    const script = source.replace(/^import .*;\n/gm, "").replaceAll("import.meta.url", JSON.stringify(extensionURL.href));
+    const script = source.replace(/^import .*;\r?\n/gm, "").replaceAll("import.meta.url", JSON.stringify(extensionURL.href));
     await vm.runInNewContext(`(async()=>{${script}})()`, {
         createServer, readFile, URL,
         joinSession: async (options) => { registration = options; return session; },
