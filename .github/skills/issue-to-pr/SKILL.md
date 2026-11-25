@@ -22,12 +22,19 @@ same `gh` commands you ran by hand in Section 1.
 3. Read the issue and the code it mentions: `gh issue view <n>`
 4. Create a branch: `git switch -c fix/issue-<n>`
 5. Make the smallest change that fixes the issue, and run the project's tests
-   if it has any.
+   if it has any. When the fix needs library or API documentation, use the
+   Microsoft Learn MCP connector (`https://learn.microsoft.com/api/mcp`) with
+   public queries only, never repository contents, and cite sources in the PR.
+   If the connector is unavailable, say so instead of claiming a lookup.
+   Then run the built-in `/security-review` skill on your changes. Fix any HIGH
+   or CRITICAL findings and list any others in the pull request body.
 6. Show the changes and obtain approval before committing, pushing explicitly to
    the verified fork remote, and opening
    a draft pull request that closes the issue. Preserve any learner skill edits
    and include them only with approval:
-   `gh pr create --draft --title "Fix #<n>: <issue title>" --body "Closes #<n>"`
+   `gh pr create --draft --title "Fix #<n>: <issue title>" --body "<body>"`
+   Start the body with "Closes #<n>", then add a short summary and a
+   "How to test" section with the exact commands a reviewer can run.
 7. Ask before commenting on the issue with what changed and how to test it.
    Report the exact issue, PR, and branch. Leave this PR branch checked out so
    the learner can review it in the same session; do not switch branches.
