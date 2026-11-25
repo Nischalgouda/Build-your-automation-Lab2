@@ -38,7 +38,7 @@ Are you an open source maintainer? Check out the settings we've shipped to help 
 
 Click the button below to open a guided GitHub Copilot App session to learn how to build your first Automation.
 
-[![Open in Copilot App](https://img.shields.io/badge/Open_in_Copilot_App-238636?style=flat&logo=githubcopilot&logoColor=white)](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fsession%2Fnew%3Frepo%3Doctodemo%252Fvirtual-universe-26%26canvas%3Duniverse-welcome)
+[![Open in Copilot App](https://img.shields.io/badge/Open_in_Copilot_App-238636?style=flat&logo=githubcopilot&logoColor=white)](https://github.com/copilot/app/launch?open=ghapp%3A%2F%2Fsession%2Fnew%3Frepo%3Doctodemo%252Fvirtual-universe-26%26prompt%3DOpen%2520the%2520Universe%2520welcome%2520canvas.)
 
 Learn about: 
 1. [Skills](./02-github-copilot-latest-features/skills/README.md) 
